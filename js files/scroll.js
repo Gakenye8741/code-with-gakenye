@@ -1,0 +1,13 @@
+ScrollReveal().reveal('header', { delay: 200 ,origin: 'right', duration: 2000});
+ScrollReveal().reveal('.logo',{delay: 300,origin: 'left',duration:'2500'});
+ScrollReveal().reveal('.theme',{delay: 400,origin: 'top',duration:'3000'});
+ScrollReveal().reveal('.menutoggle',{delay: 500,origin: 'right',duration:'3500'});
+ScrollReveal().reveal('#Home',{delay: 600,origin: 'bottom',duration:'4000'});
+ScrollReveal().reveal('.row',{delay: 700,origin: 'right',duration:'4500'});
+ScrollReveal().reveal('.col3',{delay: 1300,origin: 'left',duration:5000});
+ScrollReveal().reveal('.col1',{delay: 1900,origin: 'bottom',duration:'5500'});
+ScrollReveal().reveal('.subscribe',{delay: 2200,origin: 'left',duration:'6000'});
+ScrollReveal().reveal('#About',{delay: 500 ,origin: 'bottom',duration:'3000'});
+ScrollReveal().reveal('.image',{delay: 1100,origin: 'left',duration:'3500'});
+ScrollReveal().reveal('.Aboutp',{delay: 1500,origin: 'top',duration:'4000'});
+ScrollReveal().reveal('.socialButtons',{delay: 2000,origin: 'top',duration:'4500'});

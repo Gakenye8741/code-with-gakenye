@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Videos || Code With Gakenye</title>
+     <!-- Cascading  Style Sheet -->
+     <link rel="stylesheet" href="/css files/style.1.css">
+     <!-- Fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Icon -->
+     <link rel="shortcut icon" href="./Images/Screenshot_20240828-173952 (1).jpg" type="image/x-icon">
+     <!-- Typed  JS -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Scroll js -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <!-- Page Header -->
+    <div id="Header">
+        <header>
+            <div class="profile">
+                <img src="/Images/Screenshot_20240828-173952 (1).jpg" alt="" srcset="">
+            </div>
+
+            <div class="logo">
+                <div id="Name">
+                </div>
+            </div>
+    
+            <nav>
+                <h2>Menu</h2>
+
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html/#Home">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="/my-Videos/videos.html">My Videos</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav> 
+            <div class="theme">
+                <h5>Click here to change theme</h5>
+                <i class="fa-solid fa-sun"></i>
+            </div>
+            <footer>
+                &copy 2025 Code-With-Gakenye
+            </footer>
+        </header>
+        <div class="theme1">
+            <h5>Click here to change theme</h5>
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </div>
+
+        <div class="menutoggle">
+    
+        </div>
+        
+    </div>
+
+    <div id="videos">
+        <div class="logo1">
+            <h3>
+                Code-With-Gakenye
+            </h3>
+            
+        </div>
+        <marquee behavior="smoothl" direction="left">
+            Welcome  to the code with Code-With-Gakenye videos Section
+        </marquee>
+        <div class="content">
+            <h2>Below are some of my youtube videos. Kindly  subscribe to the channel,like,share and  enjoy as you absorb more programming  skills and knowledge from the videos.</h2>
+        </div>
+        <div class="videos">
+            <div class="video1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/z-w4JBzs2y4?si=yeayO9pmFHQNBYcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBcA1ENgkns?si=gPbcgGl4G0pkRtqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfHZjROpvNM?si=qvYQSGx11yztaLRJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+          <div class="videos">
+            <div class="video1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S0mdw7GU3nA?si=JMrbZ4HdIXSzoUDK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sCLOaVZzu5U?si=quq-9_c-1UBu-OB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2zo6XmMVnM?si=eC6BlxyY1by0z07u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS   ;FILES -->
+     <script>
+        let header = document.querySelector('#Header');
+        let menutoggle  =  document.querySelector('.menutoggle');
+
+        menutoggle.onclick = function(){
+            header.classList.toggle('act');
+        }
+
+        var typed  = new Typed('#Name',
+    {strings:['Code-With-Gakenye','Gakenye Ndiritu'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+    });
+
+    let toggle = document.querySelector('.theme');
+toggle.addEventListener('click',()=>{
+    document.body.classList.toggle('lightmode');
+});
+     </script>
+    <!-- <script src="/js files/scroll.js"></script>
+    <script src="/js files/theme.js"></script>
+     <script src="/js files/typed1.js"></script> 
+     <script src="/js files/theme1.js"></script> -->
+</body>
+</html>

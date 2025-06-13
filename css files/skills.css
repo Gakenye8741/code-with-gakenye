@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Ephesis&family=Fanwood+Text:ital@0;1&family=Handlee&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Updock&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Ephesis&family=Fanwood+Text:ital@0;1&family=Handlee&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Updock&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Ephesis&family=Fanwood+Text:ital@0;1&family=Handlee&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Updock&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.updock-regular {
+    font-family: "Updock", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  .lobster-two-bold {
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} */
+ :root{
+   --background: linear-gradient(50deg,rgb(25, 17, 54),rgb(12, 12, 12));
+   transition: 1s  ease;
+   --nav: rgba(0, 0, 0, 0.952);
+    --homep: lightgray;
+    --social : rgb(117,0,250);
+    --skill: black;
+ }
+ .lightmode{
+    --background: linear-gradient(50deg,rgb(101, 85, 161),rgb(55, 55, 139));
+     transition: 1s  ease;
+     --nav: rgba(48, 5, 65, 0.849);
+     --homep: rgba(1, 1, 1, 0.672);
+     --social : rgb(34, 34, 35);
+     --skill: lightgray;
+ }
+ body{
+    /* background:linear-gradient(50deg,rgb(117, 61, 208),rgb(117,65,255)); */
+    /* background: linear-gradient(50deg,rgb(101, 85, 161),rgb(55, 55, 139));  */
+    background: var(--background);
+ }
+ header{
+    width: 100%;
+    height: 70px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid lightgray;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 999;
+}
+.menutoggle{
+    display: none;
+}
+.logo{
+    font-family: "Updock", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    color: lightgray;
+    text-decoration: underline 4px;
+}
+header nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+header nav ul li a{
+    position: relative;
+    color: lightgray;
+    margin: 10px 10px;;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+}
+header nav ul li  a::after{
+    width: 0%;
+    height: 3px;
+    content: '';
+    position: absolute;
+    background: lightgray;
+    left: 0;
+    bottom: -3px;
+    transition: 1s ease;
+}
+header   nav ul  li a:hover::after{
+    width: 100%;
+}
+.theme{
+    color: lightgray;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.theme i:last-child{
+    display: none;
+}
+.lightmode .theme i:first-child{
+    display: none;
+}
+.lightmode .theme i:last-child{
+    display: block;
+}
+@media screen and (max-width: 500px){
+    header{
+        width: 100%;
+        padding: 0px;
+        z-index: 99;
+    }
+    header .logo{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    header nav{
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        background: var(--nav);
+        backdrop-filter: blur(50px);
+        left: -600px;
+        transition: 1s ease;
+    }
+    header.act nav{
+        left: 0;
+    }
+    header nav ul li{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .menutoggle{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background: lightgray;
+        margin-right: 10px;;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .menutoggle::before{
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        background-color: black;
+        content: '';
+        box-shadow: 0 10px black;
+        transform: translateY(-10px);
+        transition: 1s ease;
+    }
+    .menutoggle::after{
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        background-color: black;
+        content: '';
+        transform: translateY(10px);
+        transition: 1s ease;
+    }
+    header.act .menutoggle::before{
+        transform: rotate(315deg);
+        box-shadow: none;
+    }
+    header.act .menutoggle::after{
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+}
+@media screen and (min-width: 501px)  and (max-width: 960px){
+    header{
+        width: 100%;
+        padding: 0px;
+        z-index: 99;
+    }
+    header .logo{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    header nav{
+        position: absolute;
+        top: 70px;
+        
+        width: 70%;
+        background: var(--nav);
+        backdrop-filter: blur(100px);
+        left: -600px;
+        transition: 1s ease;
+        border-radius: 0 0 10px  10px;
+    }
+    header.act nav{
+        left: 0;
+    }
+    header nav ul li{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .menutoggle{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background: lightgray;
+        margin-right: 10px;;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .menutoggle::before{
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        background-color: black;
+        content: '';
+        box-shadow: 0 10px black;
+        transform: translateY(-10px);
+        transition: 1s ease;
+    }
+    .menutoggle::after{
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        background-color: black;
+        content: '';
+        transform: translateY(10px);
+        transition: 1s ease;
+    }
+    header.act .menutoggle::before{
+        transform: rotate(315deg);
+        box-shadow: none;
+    }
+    header.act .menutoggle::after{
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+}
+#skills {
+    padding: 85px 10px;
+    background-color: var(--background);
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Updock";
+    color: var(--homep);
+    text-decoration: underline;
+  }
+  
+  .filter-buttons button {
+    width: 30%;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--social);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Chewy";
+    font-size: 15px;
+    transition: 1s ease;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: rgba(128, 255, 0, 0.514);
+    color: black;
+    text-decoration: underline 2px  black;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .skill-card {
+    background-color: var(--homep);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: var(--homep);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-card i {
+    font-size: 2.5rem;
+    color: var(--skill);
+    margin-bottom: 10px;
+  }
+  
+  .skill-card h3 {
+    margin-bottom: 10px;
+    color:  var(--skill);
+    font-family: "Chewy";
+  }
+  
+  .progress-bar {
+    background-color: black;
+    border-radius: 20px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: var(--social);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

@@ -91,12 +91,11 @@ html{
 }
 .my_Services .services_row{
     width: 100%;
-    height: 400px;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 65px;
-    
+    margin-top: 40px;
 }
 .my_Services .services_row .col1_services {
     width: 100%;
@@ -106,7 +105,34 @@ html{
     border-radius: 10px;
     padding: 10px 10px;
     margin-top: 30px;
+    animation: bounce 10s linear infinite;
+    transition: 1s ease-in-out;
 }
+
+.my_Services .services_row .col1_services:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--menutoggle);
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(-10px);
+    }
+    25%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+
+}
+
 
 .col1_services h3{
     text-align: center;
@@ -143,7 +169,7 @@ html{
     padding: 5px 5px;
     border-radius: 10px;
 }
-#webDevelopment,#ui,#online{
+#webDevelopment,#ui,#online,#graphics,#data_entry,#app_dev{
     font-family: "Poppins";
     text-decoration: underline 2px solid var(--homep);
 }
@@ -182,6 +208,7 @@ html{
 .hire-button button a:hover{
    color: var(--menutoggle);
 }
+
 @media screen and (max-width: 500px){
     .my_Services{
         padding: 10px 10px;

@@ -25,3 +25,24 @@ var typed = new Typed("#online",{
     backSpeed: 100,
     loop: true
 });
+
+var typed = new Typed("#graphics",{
+    strings: ["Graphic Designs","Graphic Designs"],
+    typeSpeed: 200,
+    backSpeed: 100,
+    loop: true
+});
+
+var typed = new Typed("#data_entry",{
+    strings: ["General Data Entry & Digitization","General Data Entry & Digitization"],
+    typeSpeed: 200,
+    backSpeed: 100,
+    loop: true
+});
+
+var typed = new Typed("#app_dev",{
+    strings: ["Mobile Application Development","Mobile Application Development"],
+    typeSpeed: 200,
+    backSpeed: 100,
+    loop: true
+});

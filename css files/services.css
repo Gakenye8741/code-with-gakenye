@@ -140,7 +140,7 @@ html{
     color: transparent;
     /* text-decoration: dashed underline 2px var(--homep); */
     font-size: 30px;
-    background: linear-gradient(to left,red,blue,black,lightgray,red);
+    background: linear-gradient(to left,red,blue,black,lightgray,green,yellow,pink,orange,orangered,red);
     background-clip: text;
     background-size: 500%;
     animation: change_color 10s linear infinite;

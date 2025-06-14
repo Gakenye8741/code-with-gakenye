@@ -18,3 +18,10 @@ var typed = new Typed("#ui",{
     backSpeed: 100,
     loop: true
 });
+
+var typed = new Typed("#online",{
+    strings: ["Online coding Tutoring","Online coding Tutoring"],
+    typeSpeed: 200,
+    backSpeed: 100,
+    loop: true
+});

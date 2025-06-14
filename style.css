@@ -766,3 +766,13 @@ header   nav ul  li a:hover::after{
     padding: 10px 10px;
     /* background: white; */
 }
+.three-columns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#services .row{
+    display: flex;
+    /* flex-direction: column; */
+}

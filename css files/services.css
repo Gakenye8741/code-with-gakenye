@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Ephesis&family=Fanwood+Text:ital@0;1&family=Handlee&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Updock&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Ephesis&family=Fanwood+Text:ital@0;1&family=Handlee&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Updock&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Ephesis&family=Fanwood+Text:ital@0;1&family=Handlee&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Updock&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.updock-regular {
+    font-family: "Updock", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lobster-two-bold {
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+  .chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} */
+ :root{
+   --background: linear-gradient(50deg,rgb(25, 17, 54),rgb(12, 12, 12));
+   transition: 1s  ease;
+   --nav: rgba(23, 1, 1, 0.895);
+    --homep: lightgray;
+    --social : rgb(117,0,250);
+    --menutoggle: #000;
+    --logo: transparent;
+ }
+ .lightmode{
+    --background: linear-gradient(to left,rgb(101, 85, 161),rgb(55, 55, 139));
+     transition: 1s  ease;
+     --nav: rgba(48, 5, 65, 0.849);
+     --homep: rgba(1, 1, 1, 0.672);
+     --social : rgb(34, 34, 35);
+     --menutoggle: lightgray;
+     --logo: rgba(34, 33, 33, 0.315);
+ }
+.my_Services{
+    padding: 0px 40px;
+    color: var(--homep);
+    width: 100%;
+    height: fit-content;
+}
+.my_Services h2{
+    font-size: 45px;
+    font-family: 'chewy';
+    -webkit-text-stroke: 1px lightgray;
+    color: transparent;
+    text-align: center;
+    text-decoration: underline 2px white;
+    margin-bottom: 10px;
+    cursor: all-scroll;
+}
+
+.my_Services p{
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-align: center;
+}
+.my_Services .services_row{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.my_Services .services_row .col1_services {
+    width: 100%;
+    flex-basis: 30%;
+    box-shadow: 0 0 10px var(--homep);
+    height: fit-content;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
+
+.col1_services h3{
+    text-align: center;
+    font-family: 'Updock';
+    color: transparent;
+    /* text-decoration: dashed underline 2px var(--homep); */
+    font-size: 30px;
+    background: linear-gradient(to left,red,blue,black,lightgray,red);
+    background-clip: text;
+    background-size: 500%;
+    animation: change_color 10s linear infinite;
+    transition: 1s ease-in-out;
+}
+@keyframes change_color{
+    0%{background-position: 400% 50%;}
+    100%{background-position: 100% 50%;}
+}
+.col1_services .image{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col1_services .image img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.services_row .content{
+    width: 100%;
+    height: fit-content;
+    background: var(--background);
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+#webDevelopment{
+    font-family: "Poppins";
+}
+.content p{
+    font-size: 15px;
+    text-align: left;
+    font-family: "Lobster";
+}
+.hire-button{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 10px 10px;
+}
+.hire-button button{
+    width: 40%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background: var(--background);
+    border: none;
+    box-shadow: 0 0 10px var(--homep);
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.hire-button button:hover{
+    background: var(--homep);
+    box-shadow: none;
+}
+.hire-button button a{
+    color: var(--homep);
+    font-family: "Poppins";
+}
+.hire-button button a:hover{
+   color: var(--menutoggle);
+}

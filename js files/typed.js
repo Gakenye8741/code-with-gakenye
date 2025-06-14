@@ -10,3 +10,11 @@ var typed = new Typed("#webDevelopment",{
     backSpeed: 100,
     loop: true
 });
+
+
+var typed = new Typed("#ui",{
+    strings: ["Web Design (UI/UX Design)","Web Design (UI/UX Design)"],
+    typeSpeed: 200,
+    backSpeed: 100,
+    loop: true
+});
